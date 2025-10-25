@@ -1,0 +1,11 @@
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+data/raw/
+outputs/figures/
+outputs/tables/
+outputs/logs/
+*.html
+*.svg
+*.pdf

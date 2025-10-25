@@ -1,0 +1,31 @@
+run:
+  start_date: "1995-01-01"
+  tz: "UTC"
+
+market_data:
+  provider: "stooq"
+  frequency: "monthly"
+  aggregation: "OpenToOpen"
+  tickers:
+    ndq: "^NDX"
+    gold: "XAUUSD"
+
+sources:
+  shiller:
+    provider: "yale_excel"
+    url: "https://img1.wsimg.com/blobby/go/e5e77e0b-59d1-44d9-ab25-4763ac982e53/downloads/4a0629e8-3f7f-4884-817b-81cf106d8f88/ie_data.xls?ver=1759496035247"
+    sheet: "data"
+
+fetch:
+  save_with_date_suffix: true
+  user_agent: "R (markets_project; contact: you@example.com)"
+
+output:
+  fig_formats: ["svg"]   # istersen "svg,pdf" yaparsın
+  fig_width: 1600        # px
+  fig_height: 800        # px
+
+signal:
+  deadzone_lo: 45
+  deadzone_hi: 55
+  chart_from:  "1995-01-01"   # rejim grafiğinde gösterim başlangıcı
