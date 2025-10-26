@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <meta charset="utf-8"/>
+  <title>Shiller RSI(12) vs SMA(12) — Strateji Raporu</title>
+  <style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+       line-height:1.35; margin: 24px; color:#111; }
+h1 { font-size: 24px; margin: 0 0 6px 0; }
+h2 { font-size: 18px; margin-top: 22px; }
+h3 { font-size: 16px; }
+.table { border-collapse: collapse; }
+.table th, .table td { border:1px solid #ddd; padding:6px 8px; }
+.small { color:#666; font-size: 12px; }
+.badge { display:inline-block; padding:2px 8px; border-radius:10px; background:#eee; margin-left:6px; }
+.badge.bull { background:#e6f6ea; color:#137333; }
+.badge.bear { background:#fde7e9; color:#b80627; }
+</style>
+</head>
+<html>
+  <body>
+    <div>
+      <h1>Shiller RSI(12) vs SMA(12) — Strateji Raporu</h1>
+      <div class="small">Oluşturulma: 2025-10-25 18:12 MDT • Veri başlangıcı: 1995-01-01</div>
+    </div>
+    <div>
+      <h2>Mevcut Durum</h2>
+      <p>
+        Son sinyal tarihi: 2025-10-01 — Rejim: 
+        <span class="badge bull">BULL (+1) → NDQ</span>
+      </p>
+      <p>Açık pozisyon: <b>—</b></p>
+      <div class="small">Kural: BULL (+1) → %100 NDQ, BEAR (−1) → %100 GOLD (aylık Open→Open).</div>
+    </div>
+    <div>
+      <h2>Toplam Getiriler (1995+)</h2>
+      <table class="table" style="width:auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Seri </th>
+   <th style="text-align:left;"> Kümülatif Getiri </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Strategy </td>
+   <td style="text-align:left;"> 24 077.46% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> NDQ_BuyHold </td>
+   <td style="text-align:left;"> 5 970.02% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GOLD_BuyHold </td>
+   <td style="text-align:left;"> 907.83% </td>
+  </tr>
+</tbody>
+</table>
+    </div>
+    <div>
+      <h2>Özet Metrikler</h2>
+      <table class="table" style="width:auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Metric </th>
+   <th style="text-align:right;"> Strategy </th>
+   <th style="text-align:right;"> NDQ_BuyHold </th>
+   <th style="text-align:right;"> GOLD_BuyHold </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> CAGR </td>
+   <td style="text-align:right;"> 0.195 </td>
+   <td style="text-align:right;"> 0.143 </td>
+   <td style="text-align:right;"> 0.078 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Stdev_Ann </td>
+   <td style="text-align:right;"> 0.165 </td>
+   <td style="text-align:right;"> 0.241 </td>
+   <td style="text-align:right;"> 0.156 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Sharpe </td>
+   <td style="text-align:right;"> 1.170 </td>
+   <td style="text-align:right;"> 0.678 </td>
+   <td style="text-align:right;"> 0.561 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> MaxDrawdown </td>
+   <td style="text-align:right;"> -0.291 </td>
+   <td style="text-align:right;"> -0.807 </td>
+   <td style="text-align:right;"> -0.416 </td>
+  </tr>
+</tbody>
+</table>
+    </div>
+    <div>
+      <h2>Yıllık Getiriler (MTM)</h2>
+      <table class="table" style="width:auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Year </th>
+   <th style="text-align:right;"> Strat </th>
+   <th style="text-align:right;"> NDQ </th>
+   <th style="text-align:right;"> GOLD </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 1995 </td>
+   <td style="text-align:right;"> 0.43 </td>
+   <td style="text-align:right;"> 0.47 </td>
+   <td style="text-align:right;"> 0.01 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1996 </td>
+   <td style="text-align:right;"> 0.09 </td>
+   <td style="text-align:right;"> 0.40 </td>
+   <td style="text-align:right;"> -0.04 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1997 </td>
+   <td style="text-align:right;"> 0.02 </td>
+   <td style="text-align:right;"> 0.26 </td>
+   <td style="text-align:right;"> -0.20 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1998 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.48 </td>
+   <td style="text-align:right;"> -0.01 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1999 </td>
+   <td style="text-align:right;"> 0.52 </td>
+   <td style="text-align:right;"> 0.91 </td>
+   <td style="text-align:right;"> -0.01 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2000 </td>
+   <td style="text-align:right;"> -0.07 </td>
+   <td style="text-align:right;"> -0.14 </td>
+   <td style="text-align:right;"> -0.07 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2001 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> -0.39 </td>
+   <td style="text-align:right;"> 0.02 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2002 </td>
+   <td style="text-align:right;"> -0.25 </td>
+   <td style="text-align:right;"> -0.27 </td>
+   <td style="text-align:right;"> 0.16 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2003 </td>
+   <td style="text-align:right;"> 0.47 </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.25 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2004 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2005 </td>
+   <td style="text-align:right;"> 0.11 </td>
+   <td style="text-align:right;"> 0.07 </td>
+   <td style="text-align:right;"> 0.09 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2006 </td>
+   <td style="text-align:right;"> 0.09 </td>
+   <td style="text-align:right;"> 0.06 </td>
+   <td style="text-align:right;"> 0.32 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2007 </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.22 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2008 </td>
+   <td style="text-align:right;"> 0.04 </td>
+   <td style="text-align:right;"> -0.44 </td>
+   <td style="text-align:right;"> 0.04 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2009 </td>
+   <td style="text-align:right;"> 0.65 </td>
+   <td style="text-align:right;"> 0.54 </td>
+   <td style="text-align:right;"> 0.45 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2010 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.21 </td>
+   <td style="text-align:right;"> 0.18 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2011 </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.07 </td>
+   <td style="text-align:right;"> 0.26 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2012 </td>
+   <td style="text-align:right;"> 0.06 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> -0.02 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.30 </td>
+   <td style="text-align:right;"> -0.27 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2014 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> -0.08 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2015 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> -0.07 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2016 </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.03 </td>
+   <td style="text-align:right;"> 0.10 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 0.32 </td>
+   <td style="text-align:right;"> 0.32 </td>
+   <td style="text-align:right;"> 0.09 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> -0.01 </td>
+   <td style="text-align:right;"> 0.12 </td>
+   <td style="text-align:right;"> -0.04 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.20 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 0.45 </td>
+   <td style="text-align:right;"> 0.47 </td>
+   <td style="text-align:right;"> 0.21 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> 0.32 </td>
+   <td style="text-align:right;"> 0.00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2022 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> -0.26 </td>
+   <td style="text-align:right;"> 0.00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2023 </td>
+   <td style="text-align:right;"> 0.43 </td>
+   <td style="text-align:right;"> 0.32 </td>
+   <td style="text-align:right;"> 0.15 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2024 </td>
+   <td style="text-align:right;"> 0.32 </td>
+   <td style="text-align:right;"> 0.32 </td>
+   <td style="text-align:right;"> 0.30 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2025 </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> 0.17 </td>
+   <td style="text-align:right;"> 0.45 </td>
+  </tr>
+</tbody>
+</table>
+    </div>
+    <div>
+      <h2>Trade İstatistikleri ve Kayıtlar</h2>
+      <h3 style="margin-top:24px;">Özet</h3>
+      <table class="table" style="width:auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Trades </th>
+   <th style="text-align:right;"> WinRate </th>
+   <th style="text-align:right;"> AvgWin </th>
+   <th style="text-align:right;"> AvgLoss </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 56 </td>
+   <td style="text-align:right;"> 0.804 </td>
+   <td style="text-align:right;"> 0.154 </td>
+   <td style="text-align:right;"> -0.04 </td>
+  </tr>
+</tbody>
+</table>
+      <h3 style="margin-top:24px;">Son 5 İşlem (PNL)</h3>
+      <table class="table" style="width:auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Entry_ym </th>
+   <th style="text-align:left;"> Exit_ym </th>
+   <th style="text-align:left;"> Side </th>
+   <th style="text-align:right;"> Return </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 2021-12-01 </td>
+   <td style="text-align:left;"> 2021-12-01 </td>
+   <td style="text-align:left;"> NDQ </td>
+   <td style="text-align:right;"> 0.0295 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2022-01-01 </td>
+   <td style="text-align:left;"> 2023-02-01 </td>
+   <td style="text-align:left;"> GOLD </td>
+   <td style="text-align:right;"> 0.0862 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2023-03-01 </td>
+   <td style="text-align:left;"> 2025-03-01 </td>
+   <td style="text-align:left;"> NDQ </td>
+   <td style="text-align:right;"> 0.7364 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2025-04-01 </td>
+   <td style="text-align:left;"> 2025-08-01 </td>
+   <td style="text-align:left;"> GOLD </td>
+   <td style="text-align:right;"> 0.1523 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2025-09-01 </td>
+   <td style="text-align:left;"> 2025-10-01 </td>
+   <td style="text-align:left;"> NDQ </td>
+   <td style="text-align:right;"> 0.0697 </td>
+  </tr>
+</tbody>
+</table>
+      <h3 style="margin-top:24px;">Varlık Katkıları (1995+)</h3>
+      <table class="table" style="width:auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Varlık </th>
+   <th style="text-align:left;"> Getiri </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> NDQ </td>
+   <td style="text-align:left;"> 8 323.51% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GOLD </td>
+   <td style="text-align:left;"> 187.02% </td>
+  </tr>
+</tbody>
+</table>
+      <p class="small">
+        Tam trade log: 
+        <a href="tables/trades_shiller_strategy.csv" target="_blank">trades_shiller_strategy.csv</a>
+      </p>
+    </div>
+    <div>
+      <h2>Grafikler</h2>
+      <h3 style="margin-top:24px;">1) Shiller CAPE — RSI(12) &amp; SMA(12)</h3>
+      <em>Bulunamadı: outputs/figures/shiller_RSI12_SMA12.svg</em>
+      <h3 style="margin-top:24px;">2) Rejim Bantları Üzerinde NASDAQ (log)</h3>
+      <img src="figures/ndq_regimes_raw.svg" style="width:100%; max-width:1400px; display:block; margin:12px 0;"/>
+      <h3 style="margin-top:24px;">3) Strateji vs NDQ &amp; GOLD — Eşitlik Eğrileri (log)</h3>
+      <img src="figures/backtest_equity_curves.svg" style="width:100%; max-width:1400px; display:block; margin:12px 0;"/>
+      <h3 style="margin-top:24px;">4) Drawdown</h3>
+      <img src="figures/backtest_drawdown.svg" style="width:100%; max-width:1400px; display:block; margin:12px 0;"/>
+      <h3 style="margin-top:24px;">5) 12 Aylık Rolling Getiri</h3>
+      <img src="figures/backtest_rolling12m.svg" style="width:100%; max-width:1400px; display:block; margin:12px 0;"/>
+    </div>
+    <div>
+      <h2>Dosyalar</h2>
+      <ul>
+        <li>
+          <a href="tables/summary_shiller_strategy.csv" target="_blank">Özet metrikler (CSV)</a>
+        </li>
+        <li>
+          <a href="tables/yearly_returns_shiller_strategy.csv" target="_blank">Yıllık getiriler (CSV)</a>
+        </li>
+        <li>
+          <a href="tables/trades_shiller_strategy.csv" target="_blank">Trade log (CSV)</a>
+        </li>
+        <li>
+          <a href="tables/trade_stats_shiller_strategy.csv" target="_blank">Trade ist. (CSV)</a>
+        </li>
+        <li>
+          <a href="tables/last5_trades.csv" target="_blank">Son 5 trade (CSV)</a>
+        </li>
+        <li>
+          <a href="tables/contributions_by_asset.csv" target="_blank">Katkılar (CSV)</a>
+        </li>
+        <li><em>Bulunamadı: outputs/figures/shiller_RSI12_SMA12.svg</em></li>
+        <li>
+          <a href="figures/ndq_regimes_raw.svg" target="_blank">Rejim grafiği (SVG)</a>
+        </li>
+        <li>
+          <a href="figures/backtest_equity_curves.svg" target="_blank">Eşitlik eğrileri (SVG)</a>
+        </li>
+        <li>
+          <a href="figures/backtest_drawdown.svg" target="_blank">Drawdown (SVG)</a>
+        </li>
+        <li>
+          <a href="figures/backtest_rolling12m.svg" target="_blank">Rolling 12m (SVG)</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+</html>

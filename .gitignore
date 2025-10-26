@@ -6,6 +6,3 @@ data/raw/
 outputs/figures/
 outputs/tables/
 outputs/logs/
-*.html
-*.svg
-*.pdf
